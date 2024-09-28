@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* CSS Document */
+* {margin: 0; padding: 0}
+
+body {background-color: #211f20; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; text-align: center; cursor: url("../img/cursor.png"), auto}
+
+/*retícula*/
+.col01 {width: 10%}
+.col02 {width: 20%}
+.col03 {width: 30%}
+.col04 {width: 40%}
+.col05 {width: 50%}
+.col06 {width: 60%}
+.col07 {width: 70%}
+.col08 {width: 80%}
+.col09 {width: 90%}
+.col10 {width: 100%}
+
+.section {padding: 20px; box-sizing: border-box; float: left;}
+
+.header {width: 85%; height: 170px; background-color: #211f20; margin: 0 auto}
+.header img {float: left; margin-top: 40px}
+
+.menu {width: 85%; height: 50px; color: white; margin: 0 auto}
+@font-face {src: url("../src/MADE TOMMY Medium_PERSONAL USE.otf"); font-family: menu}
+.menu ul {list-style-type: none; width: 100%; font-family: menu}
+.menu li {width: 25%; background-color: #211f20; height: 50px; float: left; line-height: 50px; font-size: 20px}
+.menu a {text-decoration: none; color: white}
+a {text-decoration: none; color: white}
+a:hover {color: #1bd760}
+
+.wrapper {width: 85%; background-color: #211f20; margin: 40px 200px}
+.wrapper p {text-align: left; color: white; font-family: Poppins; font-weight: 300; font-style: normal; margin-right: 110px}
+
+h2 {text-align: left; color: white; font-family: Poppins; font-style: normal}
+
+.musica:hover {transform: rotate(-45deg); transition: ease 4s}
+.conecta:hover {transform: translateX(20px); transition: ease 4s}
+
+.slider {width: auto; height: auto; margin: 0 auto; overflow: hidden;}
+.slider ul {display: flex; padding: 0; width: 400%;animation: slide 16s infinite alternate ease-in-out; list-style: none}
+.slider img { width: 100%;}
+
+@keyframes slide{
+	
+	0%{margin-left: 0%}
+	20%{margin-left: 0%}
+	
+	25%{margin-left: -100%}
+	45%{margin-left: -100%}
+		
+	50%{margin-left: -200%} 
+	75%{margin-left: -200%}
+	
+	75%{margin-left: -300%} 
+	95%{margin-left: -300%}
+}
+
+.form {text-align: left; font-family: Poppins; font-weight: 600; color: white; vertical-align: top; margin: 0 50px}
+label {display: block; margin-top: 10px; margin-bottom: 5px; font-weight: bold}
+input, textarea {width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box}
+button {font-family: Poppins; font-weight: 400; padding: 10px 20px; background-color: white; color: black; border: none; border-radius: 5px; cursor: pointer}
+button:hover {background-color: #1bd760}
+
+.clear {clear: both;}
+
+.footer {width: 85%; height: 50px; line-height: 50px; background-color: #211f20; margin: 0 auto; font-size: 12px; color: white}
